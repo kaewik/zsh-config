@@ -16,8 +16,9 @@ set_up_links () {
     ln -nfs $PROJECT_FOLDER/zshrc $ZDOTDIR/.zshrc
     ln -nfs $PROJECT_FOLDER/zlogin $ZDOTDIR/.zlogin
     ln -nfs $PROJECT_FOLDER/zlogout $ZDOTDIR/.zlogout
-
+    ln -nfs $PROJECT_FOLDER/p10k.zsh $ZDOTDIR/.p10k.zsh
 }
 
 set_up_links
+echo -e "PROJECT_FOLDER=$PROJECT_FOLDER\n$(cat $PROJECT_FOLDER/zshrc)" > $PROJECT_FOLDER/zshrc 
 
