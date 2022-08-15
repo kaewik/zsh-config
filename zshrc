@@ -1,3 +1,4 @@
+PROJECT_FOLDER=/Users/lukasz/git/zsh-config
 zmodload zsh/zprof
 
 export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
@@ -88,3 +89,9 @@ compinit -C
 # ------------------ ALIASES -----------------
 source $PROJECT_FOLDER/aliases.zsh
 source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Tab Completion Menu
+zmodload zsh/complist
+bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
