@@ -8,7 +8,3 @@ if has_command tree; then
   alias tt='tree --du -h -L 2'
   alias tt='tree --du -h -L 3'
 fi
-
-if has_command clangd-12; then
-  alias clangd='clangd-12'
-fi
