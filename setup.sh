@@ -19,6 +19,8 @@ set_up_links () {
     ln -nfs $PROJECT_FOLDER/p10k.zsh $ZDOTDIR/.p10k.zsh
 }
 
+git submodule update --init --recursive
+mkdir -p $ZDOTDIR
 set_up_links
 echo -e "PROJECT_FOLDER=$PROJECT_FOLDER\n$(cat $PROJECT_FOLDER/zshrc)" > $PROJECT_FOLDER/zshrc 
 

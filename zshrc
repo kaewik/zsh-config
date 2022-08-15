@@ -1,4 +1,3 @@
-PROJECT_FOLDER=/Users/lukasz/git/zsh-config
 zmodload zsh/zprof
 
 export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
