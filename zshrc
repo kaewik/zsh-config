@@ -76,6 +76,7 @@ fi
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # ------------------- GIT ---------------------
+source $PROJECT_FOLDER/submodules/ohmyzsh/lib/git.zsh
 source $PROJECT_FOLDER/submodules/ohmyzsh/plugins/git/git.plugin.zsh
 
 # ------------------- COMPINIT --------------
