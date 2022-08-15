@@ -25,10 +25,10 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
 
 
 # ----------------- GHCUP -----------------------
-[ -f "/Users/lukasz/.ghcup/env" ] && source "/Users/lukasz/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
 # ----------------- LOCAL BIN ------------------
-PATH="/Users/lukasz/.local/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 
 # ----------------- FZF -------------------------
 [ -f $PROJECT_FOLDER/.fzf.zsh ] && source $PROJECT_FOLDER/.fzf.zsh

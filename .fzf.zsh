@@ -1,6 +1,6 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */Users/lukasz/.local/share/nvim/site/pack/packer/start/fzf/bin* ]]; then
+if [[ ! "$PATH" == *$HOME/.local/share/nvim/site/pack/packer/start/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}$HOME/.local/share/nvim/site/pack/packer/start/fzf/bin"
 fi
 
