@@ -88,3 +88,4 @@ compinit -C
 
 # ------------------ ALIASES -----------------
 source $PROJECT_FOLDER/aliases.zsh
+source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
