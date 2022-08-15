@@ -31,7 +31,7 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
 PATH="$HOME/.local/bin:$PATH"
 
 # ----------------- FZF -------------------------
-[ -f $PROJECT_FOLDER/.fzf.zsh ] && source $PROJECT_FOLDER/.fzf.zsh
+[ -d $HOME/.local/share/nvim/site/pack/packer/start/fzf ] && [ -f $PROJECT_FOLDER/.fzf.zsh ] && source $PROJECT_FOLDER/.fzf.zsh
 # Options to fzf command
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
