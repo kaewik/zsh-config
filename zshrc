@@ -6,6 +6,7 @@ export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 
 # ----------------- NVM ----------------------
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 source $PROJECT_FOLDER/submodules/zsh-nvm/zsh-nvm.plugin.zsh
@@ -60,7 +61,7 @@ timezsh() {
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-# ----------------- NPM ------------------------
+# ----------------- SYSTEM NPM ------------------------
 export PATH="/usr/local/lib/node_modules:$PATH"
 
 # ----------------- PROMPT ----------------------
@@ -95,3 +96,4 @@ source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
 # Tab Completion Menu
 zmodload zsh/complist
 bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
+
