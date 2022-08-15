@@ -32,7 +32,7 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
 PATH="/Users/lukasz/.local/bin:$PATH"
 
 # ----------------- FZF -------------------------
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $PROJECT_FOLDER/.fzf.zsh ] && source $PROJECT_FOLDER/.fzf.zsh
 # Options to fzf command
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
