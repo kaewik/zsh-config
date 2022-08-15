@@ -60,6 +60,9 @@ timezsh() {
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+# ----------------- NPM ------------------------
+export PATH="/usr/local/lib/node_modules:$PATH"
+
 # ----------------- PROMPT ----------------------
 source $PROJECT_FOLDER/submodules/powerlevel10k/powerlevel10k.zsh-theme
 
