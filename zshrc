@@ -64,6 +64,11 @@ export VISUAL="nvim"
 # ----------------- SYSTEM NPM ------------------------
 export PATH="/usr/local/lib/node_modules:$PATH"
 
+# ----------------- LLVM Settings -----------------
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
 # ----------------- PROMPT ----------------------
 source $PROJECT_FOLDER/submodules/powerlevel10k/powerlevel10k.zsh-theme
 
