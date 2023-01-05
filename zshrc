@@ -15,6 +15,10 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 # ---------------- Cargo ----------------
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -62,11 +66,6 @@ export VISUAL="nvim"
 
 # ----------------- SYSTEM NPM ------------------------
 export PATH="/usr/local/lib/node_modules:$PATH"
-
-# ----------------- LLVM Settings -----------------
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 # ----------------- PROMPT ----------------------
 source $PROJECT_FOLDER/submodules/powerlevel10k/powerlevel10k.zsh-theme
