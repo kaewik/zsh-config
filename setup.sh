@@ -9,7 +9,7 @@ set_up_links () {
     ln -nfs $PROJECT_FOLDER/zlogin $HOME/.zlogin
     ln -nfs $PROJECT_FOLDER/zlogout $HOME/.zlogout
 
-    source $HOME/.zshenv
+    source $HOME/.zprofile
 
     ln -nfs $PROJECT_FOLDER/zshenv $ZDOTDIR/.zshenv
     ln -nfs $PROJECT_FOLDER/zprofile $ZDOTDIR/.zprofile
