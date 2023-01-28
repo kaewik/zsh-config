@@ -7,7 +7,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # ----------------- FZF -------------------------
-[ -d $HOME/.local/share/nvim/site/pack/packer/start/fzf ] && [ -f $PROJECT_FOLDER/.fzf.zsh ] && source $PROJECT_FOLDER/.fzf.zsh
+if [ -n "${commands[fzf-share]}" ]; then
+  source "$(fzf-share)/key-bindings.zsh"
+  source "$(fzf-share)/completion.zsh"
+fi
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
