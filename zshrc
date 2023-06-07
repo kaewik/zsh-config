@@ -17,7 +17,7 @@ fi
 # - The first argument to the function ($1) is the base path to start traversal
 # - See the source code (completion.{bash,zsh}) for the details.
 _fzf_compgen_path() {
-  fd --hidden --follow --exclude ".git" . "$1"
+  rg --files --hidden --follow --glob "!.git" . "$1"
 }
 
 # Use fd to generate the list for directory completion
@@ -62,3 +62,19 @@ source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
 # Tab Completion Menu
 zmodload zsh/complist
 bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/lukasz/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/lukasz/.miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/lukasz/.miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/lukasz/.miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
