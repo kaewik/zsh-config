@@ -9,3 +9,4 @@ if has_command tree; then
   alias tt='tree --du -h -L 3'
 fi
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{node_modules,.git}" | fzf'
+alias plantuml='docker run -v $PWD:/data ghcr.io/plantuml/plantuml -verbose'
