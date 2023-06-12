@@ -8,6 +8,7 @@ set_up_links () {
     ln -nfs $PROJECT_FOLDER/zshrc $HOME/.zshrc
     ln -nfs $PROJECT_FOLDER/zlogin $HOME/.zlogin
     ln -nfs $PROJECT_FOLDER/zlogout $HOME/.zlogout
+    ln -nfs $PROJECT_FOLDER/p10k.zsh $HOME/.p10k.zsh
 
     source $HOME/.zprofile
 

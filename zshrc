@@ -1,3 +1,5 @@
+PROJECT_FOLDER=/home/lukas/git/zsh-config
+PROJECT_FOLDER=/home/lukas/git/zsh-config
 zmodload zsh/zprof
 
 source $PROJECT_FOLDER/submodules/zsh-nvm/zsh-nvm.plugin.zsh
@@ -41,6 +43,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ------------------- GIT ---------------------
 source $PROJECT_FOLDER/submodules/ohmyzsh/lib/git.zsh
@@ -62,19 +65,3 @@ source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
 # Tab Completion Menu
 zmodload zsh/complist
 bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/lukasz/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/lukasz/.miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/lukasz/.miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/lukasz/.miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
