@@ -1,5 +1,3 @@
-PROJECT_FOLDER=/home/lukas/git/zsh-config
-PROJECT_FOLDER=/home/lukas/git/zsh-config
 zmodload zsh/zprof
 
 source $PROJECT_FOLDER/submodules/zsh-nvm/zsh-nvm.plugin.zsh
