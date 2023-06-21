@@ -64,3 +64,4 @@ source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
 zmodload zsh/complist
 bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
 [[ (-t $(has_command startx)) && ($TTY = /dev/tty1) ]] && startx || echo "Let's start coding!"
+[[ (-t $(has_command xmodmap)) ]] && xmodmap $PROJECT_FOLDER/Xmodmap
