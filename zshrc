@@ -58,6 +58,24 @@ compinit -C
 source $PROJECT_FOLDER/aliases.zsh
 source $PROJECT_FOLDER/submodules/ohmyzsh/lib/completion.zsh
 
+# ----------------- CONDA --------------------
+if [[ -d $HOME/.miniconda3 ]]; then
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/Users/lukasz/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/Users/lukasz/.miniconda3/etc/profile.d/conda.sh" ]; then
+          . "/Users/lukasz/.miniconda3/etc/profile.d/conda.sh"
+      else
+          export PATH="/Users/lukasz/.miniconda3/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Tab Completion Menu
