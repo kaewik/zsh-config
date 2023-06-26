@@ -1,11 +1,6 @@
-zmodload zsh/zprof
+#zmodload zsh/zprof
 
-source $PROJECT_FOLDER/submodules/zsh-nvm/zsh-nvm.plugin.zsh
 source $PROJECT_FOLDER/utils.zsh
-
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 
 # ----------------- FZF -------------------------
 if [ -n "${commands[fzf-share]}" ]; then
@@ -44,16 +39,16 @@ fi
 [[ -f ~/.config/zsh/.p10k.zsh ]] && source ~/.config/zsh/.p10k.zsh
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# ------------------- GIT ---------------------
-source $PROJECT_FOLDER/submodules/ohmyzsh/lib/git.zsh
-source $PROJECT_FOLDER/submodules/ohmyzsh/plugins/git/git.plugin.zsh
-
 # ------------------- COMPINIT --------------
 autoload -Uz compinit
 for dump in $ZDOTDIR/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
+
+# ------------------- GIT ---------------------
+source $PROJECT_FOLDER/submodules/ohmyzsh/lib/git.zsh
+source $PROJECT_FOLDER/submodules/ohmyzsh/plugins/git/git.plugin.zsh
 
 # ------------------ ALIASES -----------------
 source $PROJECT_FOLDER/aliases.zsh
