@@ -23,5 +23,5 @@ set_up_links () {
 git submodule update --init --recursive
 mkdir -p $ZDOTDIR
 set_up_links
-echo -e "PROJECT_FOLDER=$PROJECT_FOLDER\n$(cat $PROJECT_FOLDER/zshrc)" > $PROJECT_FOLDER/zshrc 
+echo -e "PROJECT_FOLDER=$PROJECT_FOLDER\n$(cat $PROJECT_FOLDER/zshrc)" > $PROJECT_FOLDER/zshrc
 
