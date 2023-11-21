@@ -43,3 +43,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # ------------ HOME -------------
 export PATH="$HOME/bin:$PATH"
+
+# ------------ Truffelhog ----------
+export PATH="/usr/local/opt/util-linux/bin:$PATH"
+export PATH="/usr/local/opt/util-linux/sbin:$PATH"
