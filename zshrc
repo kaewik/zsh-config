@@ -76,4 +76,3 @@ fi
 zmodload zsh/complist
 bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
 has_command startx && [[ ($TTY = /dev/tty1) ]] && startx || echo "Let's start coding!"
-has_command xmodmap && xmodmap $PROJECT_FOLDER/Xmodmap
