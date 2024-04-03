@@ -1,6 +1,7 @@
 #!/bin/bash
 
 PROJECT_FOLDER=$(cd `dirname $0` && pwd)
+ZDOTDIR=${ZDOTDIR:-$HOME/.config/zsh}
 
 set_up_links () {
     ln -nfs $PROJECT_FOLDER/zshenv $HOME/.zshenv
