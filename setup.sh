@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 PROJECT_FOLDER=$(cd `dirname $0` && pwd)
 ZDOTDIR=${ZDOTDIR:-$HOME/.config/zsh}
